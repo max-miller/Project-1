@@ -19,7 +19,7 @@ It makes a certain intuitive sense that neighborhood should matter. This is born
 
 ![alt text](https://github.com/max-miller/Project-1/blob/master/adjusted%202.png?raw=true "Model errors plotted")
 
-Lower price greens and purples in the above map suddenly become higher [relative] price yellows and oranges below. These are small houses or apartments that the naive model thinks should be cheap, but are more expensive than otherwise expected given the neighborhood.
+Lower price greens and purples in the above map suddenly become higher [relative] price yellows and oranges below. These are small houses or apartments that the naive model thinks should be cheap, but are more expensive than otherwise expected due to neighborhood effects.
 
 Or consider a graph like this one below, which plots square feet of living space against house price for three zipcodes, suggest that there are some important neighborhood effects in play:
 
