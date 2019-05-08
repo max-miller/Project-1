@@ -1,42 +1,29 @@
 
-# Module 1 Final Project
+# Max Miller Module 1 Final Project
 
 
 ## Introduction
 
-In this lesson, we'll review all of the guidelines and specifications for the final project for Module 1. 
+In this project we were given a large set of house sales data from Kings county Washington from 2014/15 and given the opportunity to explore it and create a model/regression to predict house price based on any relevant sets of data.
 
-## Objectives
-You will be able to:
-* Describe all required aspects of the final project for Module 1
-* Describe all required deliverables
-* Describe what constitutes a successful project
-* Describe what the experience of the project review should be like
 
 ## Final Project Summary
 
-You've made it all the way through the first module of this course - take a minute to celebrate your awesomeness! 
+Our dataset included numerous variables that intuitively ought to be well connected with house price: house/apartment size (as measured in square feet of living space as well as lot size), number of beds/baths, measures of the house's condition, flags for various house features (like waterfront view) and house location (in the form of zipcodes and latitude/longitudes for each house).
 
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-v2-mod1-final-project/master/awesome.gif)
+After cleaning up the data and rendering some of the variables into more useful forms (I turned a spotty and incomplete list of 'last renovation year' into a simple flag for whether the house had had a renovation any time in the last decade or not, which proved to have real predictive power), I focused my attention on trying to get the most robust set of neighborhood related variables into my model without running into overfit issues.
+
+A graph like this one, which plots square feet of living space against house price for three zipcodes, suggest that there are some important neighborhood effects in play:
+
+![alt text]( "Logo Title Text 1")
+
 
 All that remains in Module 1 is to put our newfound data science skills to use with a final project! You should expect this project to take between 40 and 50 hours of solid, focused effort. If you're done way quicker, go back and dig in deeper or try some of the optional "level up" suggestions. If you're worried that you're going to get to 30 hrs and still not even have the data imported, reach out to an instructor in Slack ASAP to get some help!
 
-## The Dataset
 
-For this project, you'll be working with the King County House Sales dataset. We've modified the dataset to make it a bit more fun and challenging.  The dataset can be found in the file `"kc_house_data.csv"`, in this repo. 
-
-The description of the column names can be found in the column_names.md file in this repository. As with most real world data sets, the column names are not perfectly described, so you'll have to do some research or use your best judgment if you have questions relating to what the data means.
-
-You'll clean, explore, and model this dataset with a multivariate linear regression to predict the sale price of houses as accurately as possible. 
 
 ## The Deliverables
 
-There will be four  deliverables for this project:
-
-1. A well documented **Jupyter Notebook** containing any code you've written for this project and comments explaining it. This work will need to be pushed to your GitHub repository in order to submit your project.  
-2. A short **Keynote/PowerPoint/Google Slides presentation** (delivered as a PDF export) giving a high-level overview of your methodology and recommendations for non-technical stakeholders.	2. A short **Keynote/PowerPoint/Google Slides presentation** (delivered as a PDF export) giving a high-level overview of your methodology and recommendations for non-technical stakeholders. Make sure to also add and commit this pdf of your non-technical presentation to your repository with a file name of presentation.pdf.
-3. **A blog post** (800-1500 words) about one element of the project - it could be the EDA, the feature selection, the choice of visualizations or anything else technical relating to the project. It should be targeted at your peers - aspiring data scientists.	3. A **blog post** (800-1500 words) about one element of the project - it could be the EDA, the feature selection, the choice of visualizations or anything else technical relating to the project. It should be targeted at your peers - aspiring data scientists.
-4. A **Video Walkthrough** of your non-technical presentation. Some common video recording tools used are Zoom, Quicktime, and Nimbus. After you record your presentation, publish it on a service like YouTube or Google Drive, you will need a link to the video to submit your project.
 
 ## The Process
 
@@ -58,7 +45,7 @@ Project reviews are focused on preparing you for technical interviews. Treat pro
 
 The project review is comprised of a 45 minute 1:1 session with one of the instructors. During your project review, be prepared to:
 
-#### 1. Deliver your PDF presentation to a non-technical stakeholder. 
+#### 1. Deliver your PDF presentation to a non-technical stakeholder.
 In this phase of the review (~10 mins) your instructor will play the part of a non-technical stakeholder that you are presenting your findings to. The presentation should not exceed 5 minutes, giving the "stakeholder" 5 minutes to ask questions.
 
 In the first half of the presentation (2-3 mins), you should summarize your methodology in a way that will be comprehensible to someone with no background in data science and that will increase their confidence in you and your findings. In the second half (the remaining 2-3 mins) you should summarize your findings and be ready to answer a couple of non-technical questions from the audience. The questions might relate to technical topics (sampling bias, confidence, etc) but will be asked in a non-technical way and need to be answered in a way that does not assume a background in statistics or machine learning. You can assume a smart, business stakeholder, with a non-quantitative college degree.
@@ -86,7 +73,7 @@ What won't happen:
 * You won't be put on the spot without support
 * There's nothing you can do to instantly fail or blow it
 
-**Please note: We need to receive the URL of your repository at least 24 hours before and please have the project finished at least 3 hours before your review so we can look at your materials in advance.** 
+**Please note: We need to receive the URL of your repository at least 24 hours before and please have the project finished at least 3 hours before your review so we can look at your materials in advance.**
 
 
 ## Requirements
@@ -101,15 +88,15 @@ For this project, your Jupyter Notebook should meet the following specifications
 
 * The notebook should be well organized, easy to follow,  and code should be commented where appropriate.  
     * Level Up: The notebook contains well-formatted, professional looking markdown cells explaining any substantial code.  All functions have docstrings that act as professional-quality documentation
-* The notebook is written for technical audiences with a way to both understand your approach and reproduce your results. The target audience for this deliverable is other data scientists looking to validate your findings. 
+* The notebook is written for technical audiences with a way to both understand your approach and reproduce your results. The target audience for this deliverable is other data scientists looking to validate your findings.
 
 #### Visualizations & EDA
 
 * Your project contains at least 4 meaningful data visualizations, with corresponding interpretations. All visualizations are well labeled with axes labels, a title, and a legend (when appropriate)  
-* You pose at least 3 meaningful questions and answer them through EDA.  These questions should be well labeled and easy to identify inside the notebook. 
+* You pose at least 3 meaningful questions and answer them through EDA.  These questions should be well labeled and easy to identify inside the notebook.
     * **Level Up**: Each question is clearly answered with a visualization that makes the answer easy to understand.   
 * Your notebook should contain 1 - 2 paragraphs briefly explaining your approach to this project.
-    
+
 #### Model Quality/Approach
 
 * Your model should not include any predictors with p-values greater than .05.  
@@ -121,12 +108,12 @@ For this project, your Jupyter Notebook should meet the following specifications
 
 ### 2. Non-Technical Presentation Must-Haves
 
-The second deliverable should be a Keynote, PowerPoint or Google Slides presentation delivered as a pdf file in your fork of this repository with the file name of `presentation.pdf` detailing the results of your project.  Your target audience is non-technical people interested in using your findings to maximize their profit when selling their home. 
+The second deliverable should be a Keynote, PowerPoint or Google Slides presentation delivered as a pdf file in your fork of this repository with the file name of `presentation.pdf` detailing the results of your project.  Your target audience is non-technical people interested in using your findings to maximize their profit when selling their home.
 
 Your presentation should:
 
 * Contain between 5 - 10 professional-quality slides.  
-    * **Level Up**: The slides should use visualizations whenever possible, and avoid walls of text. 
+    * **Level Up**: The slides should use visualizations whenever possible, and avoid walls of text.
 * Take no more than 5 minutes to present.   
 * Avoid technical jargon and explain the results in a clear, actionable way for non-technical audiences.   
 
